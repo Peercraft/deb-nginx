@@ -17,7 +17,7 @@ services:
 script:
 - git submodule update --init --recursive
 #- git describe --long
-- git clone https://github.com/packpack/packpack.git packpack
+- git clone --depth 1 https://github.com/Peercraft/packpack.git packpack
 - packpack/packpack
 
 deploy:
@@ -26,7 +26,7 @@ deploy:
   repository: ${PACKAGECLOUD_REPO}
   token: ${PACKAGECLOUD_TOKEN}
   dist: ${OS}/${DIST}
-  package_glob: build/*.{deb,rpm}
+  package_glob: build/libnginx-mod-http-{modsecurity}{,-dbgsym}_*.{deb,rpm}
   skip_cleanup: true
   on:
     branch: peercraft

@@ -85,6 +85,10 @@ Copyright: 2009-2011, Salvatore Sanfilippo
                       Jan-Erik Rediger
 License: BSD-3-clause
 
+Files: debian/modules/ModSecurity-nginx/*
+Copyright: Felipe Zimmerle
+License: Apache-2.0
+
 Files: debian/modules/nginx-upload-progress/*
 Copyright: Brice Figureau
            2002-2007, Igor Sysoev

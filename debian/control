@@ -22,6 +22,7 @@ Build-Depends: autotools-dev,
                libperl-dev,
                libssl-dev,
                libxslt1-dev,
+               modsecurity,
                po-debconf,
                quilt,
                zlib1g-dev
@@ -297,6 +298,16 @@ Description: Fast, flexible pub/sub server for Nginx
  nginx server instances with Redis.
  .
  Full documentation available at https://nchan.slact.net
+
+Package: libnginx-mod-http-modsecurity
+Architecture: any
+Depends: modsecurity, ${misc:Depends}, ${shlibs:Depends}
+Description: The ModSecurity-nginx connector is the connection point between
+ Nginx and libmodsecurity (ModSecurity v3). Said another way, this project
+ provides a communication channel between Nginx and libmodsecurity. This
+ connector is required to use LibModSecurity with Nginx.
+ .
+ Full documentation available at https://github.com/SpiderLabs/ModSecurity-nginx
 
 Package: libnginx-mod-http-echo
 Architecture: any

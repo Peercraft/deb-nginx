@@ -35,6 +35,10 @@ README for Modules versions
   Homepage: https://github.com/slact/nchan
   Version: 1.0.8
 
+ ModSecurity-nginx
+  Homepage: https://github.com/SpiderLabs/ModSecurity-nginx
+  Version: git-134bd36
+
  nginx-upload-progress
   Homepage: https://github.com/masterzen/nginx-upload-progress-module
     rm -r debian/nginx-upload-progress/test

@@ -21,6 +21,7 @@ DYN_MODS := \
 	http-headers-more-filter \
 	http-image-filter \
 	http-lua \
+	http-modsecurity \
 	http-ndk \
 	http-perl \
 	http-subs-filter \
@@ -134,6 +135,7 @@ extras_configure_flags := \
 			--add-dynamic-module=$(MODULESDIR)/nginx-echo \
 			--add-dynamic-module=$(MODULESDIR)/ngx-fancyindex \
 			--add-dynamic-module=$(MODULESDIR)/nchan \
+			--add-dynamic-module=$(MODULESDIR)/ModSecurity-nginx \
 			--add-dynamic-module=$(MODULESDIR)/nginx-lua \
 			--add-dynamic-module=$(MODULESDIR)/nginx-upload-progress \
 			--add-dynamic-module=$(MODULESDIR)/nginx-upstream-fair \
